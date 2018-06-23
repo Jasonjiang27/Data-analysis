@@ -1,4 +1,4 @@
-import json
+import json   #纯用python实现，不用pandas
 
 def analysis(file,user_id):
     times=0
