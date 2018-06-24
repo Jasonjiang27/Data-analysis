@@ -9,11 +9,11 @@ def data_plot():
         df = pd.read_json('user_study.json')
     except ValueError:
         pass
-    data = df.groupby('user_id').sum()
+    data = df.groupby('user_id').sum()  #df的groupby属性
     user_id = df.user_id
     minutes = data.sum()
     fig = plt.figure()
-    ax = fig.add_subplot(1,1,1)   #�����ָ�Ϊ1��1�еĵ�1��
+    ax = fig.add_subplot(1,1,1)   #»­²¼·Ö¸îÎª1ÐÐ1ÁÐµÄµÚ1¸ö
     ax.set_title("StudyData")
     ax.set_xlabel("User ID")
     ax.set_ylabel("Study Time")
