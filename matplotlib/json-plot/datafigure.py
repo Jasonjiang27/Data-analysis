@@ -13,7 +13,7 @@ def data_plot():
     user_id = df.user_id
     minutes = data.sum()
     fig = plt.figure()
-    ax = fig.add_subplot(1,1,1)   #»­²¼·Ö¸îÎª1ÐÐ1ÁÐµÄµÚ1¸ö
+    ax = fig.add_subplot(1,1,1)   #设置画布为1行1列，并且在第一个位置
     ax.set_title("StudyData")
     ax.set_xlabel("User ID")
     ax.set_ylabel("Study Time")
